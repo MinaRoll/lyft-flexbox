@@ -1,0 +1,300 @@
+body{
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.71429;
+    background-color: pink;
+    font-family: 'Montserrat', sans-serif;
+}
+/* sección Nav Bar */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff00bf; /* pink */
+}
+
+.link{
+ 
+  padding: 21px;
+  display: inline-block;
+}
+
+.flex-container{
+    display: flex;
+}
+.menu{
+    background: transparent;
+    background-image: none;
+    border-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menu.flex-container{
+    justify-content: flex-start;
+} 
+.logo-container{
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.flex-container .logo{ /* imagen logo */
+    width: 70px;
+    height: auto;
+} 
+.menu button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 10px;
+}
+.menu button:hover{
+    background-color: #ff00bf; /* pink */
+}
+#espacioId{
+    content: "";
+    width: 108px;
+    height: 50px;
+    background-color: transparent;
+}
+button#btnSignUp{
+    display: none;
+}
+/* cambias */
+.modificarNav #espacioId{
+    display: none;
+}
+.modificarNav{
+    background-color: white;
+}
+.modificarNav a{
+    color: black;
+}
+.modificarNav a:hover{
+    color: #ff00bf; /* pink */
+}
+.modificarNav .logo{
+    display: none;
+}
+.modificarNav .logo-container{
+    background-image: url(../img/logo-pink.png);
+    background-position: center;
+    background-size: cover;
+    width: 70px;
+    height: 50px;
+}
+.modificarNav button#botonLogin{
+    border: 2px solid silver;
+    color: black;
+}
+.modificarNav button#btnSignUp{
+    border: 2px solid #ff00bf; /* pink */
+    color: #ff00bf; /* pink */
+    display: inline;
+}
+.modificarNav button#btnSignUp:hover{
+    border: 2px solid #ff00bf; /* pink */
+    color: #ff00bf; /* pink */
+    background-color: white;
+}
+/* sección header */
+#home{
+    padding-bottom: 100px;
+}
+#bgvid{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.singup{
+    width: 450px;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-top: 150px;
+    flex-direction: column;
+    color: #352384;
+    padding: 40px;
+}
+.singup h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    color: #352384; /* blue */
+}
+.singup input.hideInput{
+    border: none;
+    border-bottom: 1px solid #BDBCC3;/* blue */
+    padding: 10px;
+    width: 90%;
+    
+}
+.singup input.showInput{
+    background-image: url(../img/error.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: right;
+}
+
+
+.singup input:focus{
+    outline: none;
+
+}
+.singup button{
+    background-color: #ff00bf; /* pink */
+    width: 40%;
+    border: none;
+    color: white;
+    padding: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.singup button:hover{
+    background-color: #EA24B8;
+}
+.singup a{
+    color: #352384; /* blue */
+    margin-left: 20px;
+    text-decoration: underline;
+}
+.singup .links{
+    margin: 20px 0;
+}
+.singup p{
+    font-size: 10px;
+    line-height: 1.2;
+    padding: 3px;
+    margin: 0;
+}
+.singup p a{
+    font-size: 10px;
+    line-height: 1.2;
+    padding: 3px;
+    margin: 0;
+    text-decoration: none;
+}
+/* sección information */
+#information{
+    background: linear-gradient(#76278f,#2b1E66);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.textInfo{
+    padding: 20px 100px;
+}
+.textInfo h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+#information img{
+    width: 40%;
+    height: 40%;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+/* sección de enlaces videos */
+.videos{
+    flex-direction: row;
+    background-color: white;
+    color: black;
+    padding: 0;
+
+}
+.textVideos{
+    padding: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+.textVideos h6, .textVideos h2{
+    margin: 0;
+    padding: 0;
+}
+.tube iframe{
+    width: 900px;
+    height: 500px;
+    display: block;
+}
+/* sección footer */
+footer{
+    background-color: #333447;
+    color: white;
+    text-align: center;
+}
+.listas{
+    width: 100%;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10px 15%;
+}
+.listas h3{
+    font-weight: 400;
+    text-align: left;
+}
+.listas a{
+    display: block;
+    font-weight: 300;
+    padding: 10px 0;
+    text-align: left;
+}
+.listas a:hover{
+    color: #ff00bf; /* pink */
+}
+.download{
+    margin-top: 30px;
+}
+.download img{
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: 20px;
+    cursor: pointer;
+}
+.iconos{
+    display: block;
+}
+.iconos i{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.line{
+    background-color: white;
+    width: 60%;
+    height: 1px;
+    margin: auto;
+}
+footer p{
+    margin: 0;
+    padding: 20px;
+}
